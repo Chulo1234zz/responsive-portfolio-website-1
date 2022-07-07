@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@200&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --black:#333;
+    --black2:#333;
+    --white:#fff;
+    --white2:#fff;
+    --red:#f00;
+}
+body
+{
+    overflow-x: hidden;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+}
+.navigation
+{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.07);
+    background: var(--white2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+.navigation.active
+{
+    width: 0;
+}
+.navigation ul
+{
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 40px;
+}
+.navigation ul li
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li a
+{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    white-space: normal;
+    display: flex;
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    opacity: 0.5;
+}
+.navigation ul li a:hover
+{
+    opacity: 1;
+}
+.main
+{
+    position: absolute;
+    left: 300px;
+    min-height: 100vh;
+    width: calc(100% - 300px);
+    background: var(--white);
+    transition: width 0.5s, left 0.5s;
+}
+.main.active
+{
+    width: calc(100% - 0px);
+    left: 0;
+}
+.main .topbar
+{
+    position: fixed;
+    top: 0;
+    width: calc(100% - 300px);
+    left: 300px;
+    background: var(--white2);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    height: 60px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    transition: width 0.5s, left 0.5s;
+}
+.main .topbar.active
+{
+    width: calc(100% - 0px);
+    left: 0;
+}
+.main .topbar .logo
+{
+    color: var(--black);
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+.main .topbar .toggle
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: var(--black);
+}
+/* banner */
+section
+{
+    position: relative;
+    min-height: 100vh;
+    /* background: #222; */
+}
+/* section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff2562;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 84% 100%);
+    animation: fade-in 0.5s ease-in forwards;
+    animation-delay: 1s;
+} */
+.banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.banner .content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner .imgBx
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.banner .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h3
+{
+    position: relative;
+    font-size: 1.4em;
+    color: var(--black);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-display: var(--black);
+}
+p
+{
+    color: #777;
+}
+.btn
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--black2);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.socialMedia
+{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+}
+.socialMedia li
+{
+    list-style: none;
+}
+.socialMedia li a
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.07);
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.2em;
+}
+.socialMedia li a:hover
+{
+    background: var(--black2);
+    color: #fff;
+}
+/* about */
+.adjust
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 0 40px;
+    padding-top: 80px;
+    background: var(--white);
+    color: var(--black);
+    display: inline-block;
+}
+.title
+{
+    width: 100%;
+    text-align: center;
+
+}
+.title h2
+{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.title h2::before
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    background: var(--black);
+    height: 1px;
+    width: 50px;
+}
+.about .content
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.about .content .textBox
+{
+    width: 49%;
+    min-width: 49%;
+}
+.about .content .imgBx
+{
+  margin-left:  40px;
+}
+.about .content .imgBx img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
