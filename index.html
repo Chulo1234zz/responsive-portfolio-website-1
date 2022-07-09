@@ -12,12 +12,12 @@
      <div class="container">
         <div class="navigation">
             <ul>
-                <li><a href="#banner">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#">Certifications</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certification" onclick="toggleMenu()">Certifications</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Us</a></li>
             </ul>
         </div>
         <div class="main">
@@ -179,6 +179,68 @@
                         </div>
                     </div>
                     </section>
+                    <!-- cerftifications -->
+                    <section class="certification adjust" id="certification">
+                        <div class="title">
+                            <h2> Certification</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        </div>
+                        <div class="content">
+                            <div class="certificationBox">
+                                <div class="imgBx">
+                                    <img src="./images/user1.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, aspernatur eveniet ullam ipsa nobis doloremque consectetur.</p>
+                                <h4>Upwork Client <br><span>Website Designer</span></h4>
+                            </div>
+                        
+                        <div class="certificationBox">
+                            <div class="imgBx">
+                                <img src="./images/user2.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, aspernatur eveniet ullam ipsa nobis doloremque consectetur.</p>
+                            <h4>Upwork Client <br><span>Website Designer</span></h4>
+                        </div>
+                 
+                    <div class="certificationBox">
+                        <div class="imgBx">
+                            <img src="./images/user3.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, aspernatur eveniet ullam ipsa nobis doloremque consectetur.</p>
+                        <h4>Upwork Client <br><span>Website Designer</span></h4>
+                    </div>
+                
+                <div class="certificationBox">
+                    <div class="imgBx">
+                        <img src="./images/user1.jpg" alt="image">
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, aspernatur eveniet ullam ipsa nobis doloremque consectetur.</p>
+                    <h4>Upwork Client <br><span>Website Designer</span></h4>
+                </div>
+           </section>
+           <!-- contact me -->
+           <section class="contact adjust" id="contact">
+            <div class="title">
+                <h2>Contact Me</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="contactForm">
+                <div class="row">
+                    <input type="text" name="" placeholder="First Name" id="">
+                    <input type="text" name="" placeholder="Last Name" id="">
+                </div>
+                <div class="row">
+                    <input type="text" name="" placeholder="Email Address" id="">
+                    <input type="text" name="" placeholder="Mobile Number" id="">
+                </div>
+                <div class="row2">
+                    <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="row2">
+                    <input type="submit" class="send" value="Send">
+                </div>
+            </div>
+            </section>
         </div>
      </div>
      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

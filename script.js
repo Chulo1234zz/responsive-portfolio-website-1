@@ -11,3 +11,11 @@ toggle.addEventListener('click', function(){
     main.classList.toggle('active')
     about.classList.toggle('active')
 })
+// menu active issue
+function toggleMenu(){
+    let navigation = document.querySelector('.navigation');
+    let main = document.querySelector('.main');
+    navigation.classList.remove('active')
+    main.classList.remove('active')
+
+}
